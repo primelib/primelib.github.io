@@ -1,0 +1,68 @@
+site_name: PrimeLib
+site_description: Documentation for github.com/primelib
+use_directory_urls: true
+
+repo_url: https://github.com/primelib/primelib.github.io
+edit_uri: https://github.com/primelib/primelib.github.io/edit/main/docs
+
+theme:
+  locale: en
+  name: material
+  font: false
+  # light / dark mode
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.top
+    - navigation.expand
+    - content.tabs.link
+
+nav:
+  - index.md
+  - Generator:
+    - generator/index.md
+    - generator/primecodegen.md
+  - Templates:
+    - template/java-feign.md
+  - Libraries:
+    - library/java.md
+  - Contribution:
+    - contribution/index.md
+    - contribution/coc.md
+    - contribution/commits.md
+    - contribution/versioning.md
+    - contribution/pullrequest.md
+
+markdown_extensions:
+  - attr_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra_css:
+  - stylesheets/content.css

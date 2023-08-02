@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mkdocs = "==1.5.2"
+mkdocs-material = "==9.1.21"
+mkdocs-git-revision-date-localized-plugin = "==1.2.0"
+
+[dev-packages]
+
+[requires]
+python_version = "*"
