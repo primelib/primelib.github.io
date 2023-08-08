@@ -37,7 +37,8 @@ nav:
   - Templates:
     - template/java-feign.md
   - Libraries:
-    - library/java.md
+    - Java:
+      - library/java/index.md
   - Contribution:
     - contribution/index.md
     - contribution/coc.md
