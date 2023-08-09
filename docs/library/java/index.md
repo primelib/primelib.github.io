@@ -21,6 +21,12 @@ The generated code makes use of some interfaces to support extension modules.
 
 ## Extensions
 
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.primelib.primecodegenlib.java/bom)](https://central.sonatype.com/artifact/io.github.primelib.primecodegenlib.java/bom)
+
+First add the `bom` to use the latest version of the extensions.
+
+`implementation("io.github.primelib.primecodegenlib.java:bom:<version>")`
+
 The source code for java extensions is available on [GitHub](https://github.com/primelib/primecodegen-lib-java).
 
 ### Reslience4J
